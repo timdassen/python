@@ -33,8 +33,8 @@ def get_filepaths():
             df = pd.read_csv(item1, header=6)
             df1 = df.iloc[0:88]
     
-    # defining timing range min as 0.02s (iloc[32]) and max 0.033 s (iloc[33])
-            df2=(df1.iloc[32:54])
+    # defining timing range min as 0.02s (iloc[32]) and max 0.033 s (iloc[54])
+            df2=(df1.iloc[24:79])
     
             plot1=df2.hist(column='X')
             plt.savefig(path + '/' + item + '_histogram' + '.jpg', bbox_inches = 'tight')
